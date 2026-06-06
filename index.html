@@ -153,7 +153,7 @@
   }
 
   .affairs-card .position-label {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 3px;
   }
 
@@ -258,6 +258,60 @@
   @media print {
     body { background: #fdf5ea; }
     .poster { width: 100%; }
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    .poster {
+      width: 100%;
+      padding: 20px 14px 24px;
+    }
+
+    header h1 { font-size: 20px; }
+    header h2 { font-size: 26px; }
+    header p  { font-size: 12px; }
+
+    /* President / VP stack nicely */
+    .leaders {
+      gap: 16px;
+    }
+    .card {
+      min-width: 130px;
+      padding: 10px 14px 10px;
+    }
+    .card h3 { font-size: 13px; }
+    .card .position-label { font-size: 12px; }
+    .avatar.large { width: 90px; height: 90px; }
+
+    /* Cabinet Affairs */
+    .affairs-card { padding: 10px 20px 10px; }
+    .affairs-card h3 { font-size: 13px; }
+    .affairs-card .position-label { font-size: 12px; }
+    .avatar.medium { width: 80px; height: 80px; }
+
+    /* Junior: 2 side by side */
+    .junior-grid {
+      gap: 14px;
+    }
+    .mini-card {
+      min-width: unset;
+      flex: 1;
+      padding: 10px 10px 10px;
+    }
+    .mini-card h4 { font-size: 12px; }
+    .mini-card .position-label { font-size: 11px; }
+
+    /* Cabinet: 2 columns = same-position pairs side by side */
+    .cabinet-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .cab-card { padding: 8px 8px 8px; }
+    .cab-card h4 { font-size: 11px; }
+    .cab-card .position-label { font-size: 10.5px; }
+    .avatar.cab { width: 70px; height: 70px; }
+
+    .section-title span { font-size: 9px; letter-spacing: 1px; padding: 4px 12px; }
   }
 </style>
 </head>
@@ -367,12 +421,12 @@
     <div class="cab-card">
       <div class="avatar cab"><img src="images/Adore Shyaka.jpg" alt="Adore Shyaka"></div>
       <h4>Adore Shyaka</h4>
-      <span class="position-label">Minister of Gender Equity, Culture &amp; and Family Promotion</span>
+      <span class="position-label">Minister of Gender Equity, Culture and Family Promotion</span>
     </div>
     <div class="cab-card orange-card">
       <div class="avatar cab"><img src="images/MUNINI Alice.jpg" alt="Munini Alice"></div>
       <h4>Munini Alice</h4>
-      <span class="position-label">Minister of Gender Equity, Culture &amp; and Family Promotion</span>
+      <span class="position-label">Minister of Gender Equity, Culture and Family Promotion</span>
     </div>
     <div class="cab-card">
       <div class="avatar cab"><img src="images/Shyaka Jules .jpg" alt="Shyaka Jules"></div>
